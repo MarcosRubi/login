@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 18px;
+}
+.login{
+    text-align:center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    position:relative;
+    z-index: 10;
+    padding: 0 20px;
+
+}
+.logo{
+    color:#666;
+    font-weight: bold;
+}
+input[type="text"], input[type="password"]{
+    padding-left: 5px;
+    height: 32px;
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    outline:none;
+    background: transparent;
+    border:none;
+    border-bottom: 1px solid rgb(67, 221, 221) ;
+}
+input[type="submit"]{
+    height: 40px;
+    width: 100%;
+    margin: 10px 0;
+    background: rgb(96, 163, 251);
+    border: none;
+    border-radius:5px;
+    line-height: 32px;
+    color:#fff;
+    outline:none;
+    text-transform:uppercase;
+    transition: all .5s;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background: rgb(55, 112, 185);
+}
+a:hover{
+color: rgb(55, 112, 185);  
+}
+span{
+    color:#444;
+}
+a{
+    color:rgb(13, 68, 141);
+    text-decoration:none;
+}
+
+.bg{
+    position:absolute;
+    background-image: url(../images/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top:0;
+    padding: 0 20px;
+}
+
+.error::placeholder{
+    color:rgb(223, 49, 49);
+}
+
+@media (min-width: 425px){
+    .form{
+        padding: 40px;
+        width: 100%;
+    }
+}
+@media (min-width: 768px){
+
+    .bg{
+        background-image: url(../images/rocket.jpg);
+        background-size: cover;
+        background-position: center;
+        position:relative;
+        width: 56%;
+    }
+    .form{
+        width: 45%;
+    }
+}
